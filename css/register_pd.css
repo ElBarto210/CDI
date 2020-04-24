@@ -1,0 +1,24 @@
+#top-text {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#register-box {
+    width: 310px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#continue-button {
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px
+}
+
+.text_over_input {
+    margin-left: 20px;
+    margin-top: 6px
+}

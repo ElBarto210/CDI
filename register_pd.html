@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>APP</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/register_pd.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script type="text/javascript" src="js/register_pd.js"></script>
+</head>
+<body>
+    <!-- main app sreen -->
+    <div class="app-container">
+        <h2 id="top-text">Datos personales</h2>
+        
+        <div id="register-box">
+            <h2 class="text_over_input">NOMBRE</h2>
+            <input type="text" id="name" name="name" required minlength="5" maxlength="50">
+            
+            <h2 class="text_over_input">APELLIDOS</h2>
+            <input type="text" id="last_name" name="last_name" required minlength="5" maxlength="50">
+            
+            <h2 class="text_over_input">TELÉFONO</h2>
+            <input type="number" id="phone" name="phone" required minlength="5" maxlength="50">
+            
+            <h2 class="text_over_input">EMAIL</h2>
+            <input type="text" id="mail" name="mail" required minlength="5" maxlength="50" placeholder="ejemplo@ejemplo.com">
+            
+            <h2 class="text_over_input">CONTRASEÑA</h2>
+            <input type="password" id="pass" name="password" required minlength="5" maxlength="50" spellcheck="false">
+            
+            <h2 class="text_over_input">CONFIRMAR CONTRASEÑA</h2>
+            <input type="password" id="pass2" name="password2" required minlength="5" maxlength="50" spellcheck="false">
+        </div>
+        <button class="standar-big-button" id="continue-button" onclick="continue_button()">CONTINUAR</button>
+        
+        <p href="login.html" class="button-underline">Ya tengo cuenta</p>
+    
+    </div>
+</body>
+</html>

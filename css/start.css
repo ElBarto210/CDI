@@ -1,0 +1,33 @@
+.standar-text {
+    font-size: 22px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 30px
+}
+
+#middle-text {
+    height: 200px;
+    width: 240px;
+    margin-top: 100px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+#login-button {
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#ntc {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+#register-button {
+    margin-top: 0px;
+    font-size: 19px;
+}
