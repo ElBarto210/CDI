@@ -7,8 +7,8 @@ function continue_button() {
     
     
     if(pass == pass2) {
-        document.cookie = "mail=" + mail;
-        document.cookie = "name=" + name;
+        document.cookie = "mail=" + mail + ";";
+        document.cookie = "name=" + name + ";";
         
         window.location.href = "register_vh.html";
     } 

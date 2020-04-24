@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Inicio</title>
-</head>
-<body>
-<a>¿Cual es tu destino?<br/></a>
-<input type="text" id="location" name="target">
-<a href="buscador.html" id="buscar">Buscar</a>
-<br/>
-<a>Hola Username,<br/></a>
-<a>Si no eres Username, toca </a><a href="registro.html"><u>aqui</u></a>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/global.css">
+        <script type="text/javascript" src="js/main.js"></script>
+        <title>Inicio</title>
+    </head>
+    <body>
+        <a>¿Cual es tu destino?<br/></a>
+        <input type="text" id="location" name="destination"><br/>
+        <button href="buscador.html" id="buscar" onclick="Search_destination()">BUSCAR</button>
+        <br/>
+        <a>Hola </a><a id="username" onload="printUsername()"></a><a>,<br/></a>
+        <a>Si no eres </a><a id="username2" onload="printUsername()"></a><a>, toca </a><a href="login.html"><u>aqui</u></a>
+        <script>
+            document.getElementById("username").innerHTML = getName("name");
+            document.getElementById("username2").innerHTML = getName("name");
+        </script>
+    </body>
 </html>

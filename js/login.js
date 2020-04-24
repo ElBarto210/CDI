@@ -3,7 +3,7 @@ function login() {
     var pass = document.getElementById("pass").value;
     
     
-    document.cookie = "mail=" + mail;
+    document.cookie = "mail=" + mail + ";";
     
-    window.location.href = "main.html";
+    window.location.href = "inicio.html";
 }
