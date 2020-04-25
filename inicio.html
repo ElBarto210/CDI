@@ -8,6 +8,7 @@
         <title>Inicio</title>
     </head>
     <body>
+    <div class="app-container">
         <a>¿Cual es tu destino?<br/></a>
         <input type="text" id="location" name="destination"><br/>
         <button href="buscador.html" id="buscar" onclick="Search_destination()">BUSCAR</button>
@@ -15,8 +16,9 @@
         <a>Hola </a><a id="username" onload="printUsername()"></a><a>,<br/></a>
         <a>Si no eres </a><a id="username2" onload="printUsername()"></a><a>, toca </a><a href="login.html"><u>aqui</u></a>
         <script>
-            document.getElementById("username").innerHTML = getName("name");
-            document.getElementById("username2").innerHTML = getName("name");
+            document.getElementById("username").innerHTML = getUsername();
+            document.getElementById("username2").innerHTML = getUsername();
         </script>
+    </div>
     </body>
 </html>

@@ -1,19 +1,3 @@
-function Search_destination() {
-    var destination = document.getElementById("destination").value;
-
-    document.cookie = "destination=" + destination + ";";
-
-    window.location.href = "buscador.html";
-}
-
-function getUsername() {
-    var name = getCookie("name");
-    if(name === " "){
-        name = "Username";
-    }
-    return name;
-}
-
 function getCookie(cname) {
     var value = " ";
     var name = cname + "=";
@@ -29,4 +13,15 @@ function getCookie(cname) {
         }
     }
     return value;
+}
+
+
+function changeFeature(feature) {
+    if (getCookie(feature) !== "1") {
+        document.cookie = feature + "= 1;";
+    }
+    else{
+        document.cookie = feature + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;"
+    }
+
 }
