@@ -15,3 +15,17 @@
     margin-left: 40px;
 }
 
+#pass-recov-button {
+    color: black;
+    margin-top: 20px;
+    margin-left: 57px;
+    display: inline-block;
+}
+
+#ntc {
+    color: black;
+    margin-top: 20px;
+    margin-left: 115px;
+    position: static;
+    display: inline-block;
+}
