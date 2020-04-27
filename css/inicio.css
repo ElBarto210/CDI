@@ -1,0 +1,38 @@
+#texto-inferior {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    top: 490px;
+    margin-left: 50px;
+}
+
+#aqui {
+    color: black
+}
+
+#buscar {
+    margin-top: 35px;
+    margin-left: 60px;
+}
+
+#info-text {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 200px;
+    margin-left: 75px;
+    text-align: center;
+}
+
+#icon {
+    width: 80px;
+    height: 130px;
+    margin-left: 135px;
+    margin-top: 80px;
+}
+
+#location {
+    margin-left: 30px;
+    margin-top: 5px;
+}

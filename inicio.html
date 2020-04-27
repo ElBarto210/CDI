@@ -2,19 +2,24 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/inicio.css">
         <link rel="stylesheet" href="css/global.css">
         <script type="text/javascript" src="js/main.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
         <title>Inicio</title>
     </head>
     <body>
     <div class="app-container">
-        <a>¿Cual es tu destino?<br/></a>
-        <input type="text" id="location" name="destination"><br/>
-        <button href="buscador.html" id="buscar" onclick="Search_destination()">BUSCAR</button>
+        <i class="fas fa-map-marker-alt" id="icon"></i>
+        <p id="info-text">¿Cual es tu destino?</p>
+        <input type="text" id="location" name="destination" placeholder="Paseo de la Castellana, 18">
+        <button href="buscador.html" id="buscar" onclick="Search_destination()" class="standar-big-button">BUSCAR</button>
         <br/>
-        <a>Hola </a><a id="username" onload="printUsername()"></a><a>,<br/></a>
-        <a>Si no eres </a><a id="username2" onload="printUsername()"></a><a>, toca </a><a href="login.html"><u>aqui</u></a>
+        
+        <div id="texto-inferior">
+            <p style="font-size: 20px">¡Hola, <span id="username" onload="printUsername()"></span>!</p>
+            <p>Si no eres <span id="username2" onload="printUsername()"></span>, toca <a href="login.html" id="aqui">aqui</a></p>
+        </div>
         <script>
             document.getElementById("username").innerHTML = getUsername();
             document.getElementById("username2").innerHTML = getUsername();
