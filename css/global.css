@@ -50,6 +50,7 @@ button:focus{
 }
 
 .standar-big-button {
+    cursor: pointer;
     position: relative;
     font-size: 20px;
     background-color: #e69900;
