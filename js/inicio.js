@@ -30,3 +30,7 @@ function getCookie(cname) {
     }
     return value;
 }
+
+function displaymenu() {
+    window.location.href = "menu.html";
+}

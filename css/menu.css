@@ -1,0 +1,47 @@
+#close-menu-button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 38px;
+    height: 38px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+#menu-options-container {
+    background-color: #F7F2E0;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+}
+
+.menu-button {
+    height: 90px;
+    background-color: #F7BE81;
+    border-bottom: 2px;
+    border-bottom-color: #F7F2E0;
+    border-bottom-style: solid;
+}
+
+.icon {
+    height: 70px !important;
+    width: 70px !important;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 23px;
+    color: black;
+    text-align: left;
+    position: absolute;
+    left: 100px;
+    height: 30px;
+    margin: 0;
+    padding-top: 30px;
+    border: 0;
+}
