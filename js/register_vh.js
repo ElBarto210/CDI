@@ -25,3 +25,15 @@ function changeFeature(feature) {
     }
 
 }
+
+function continue_button() {
+    var vhmarca = document.getElementById("vhmarca").value;
+    var vhmodelo = document.getElementById("vhmodelo").value;
+    var vhmatricula = document.getElementById("vhmatricula").value;
+
+    document.cookie = "vhmatricula="+vhmatricula;
+    document.cookie = "vhmodelo="+vhmodelo;
+    document.cookie = "vhmarca="+vhmarca;
+
+    window.location.href = "pago.html"
+}

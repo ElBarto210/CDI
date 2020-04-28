@@ -1,0 +1,56 @@
+.tarjeta, .paypal {
+	display: inline-block;
+	height: 135px;
+	width: 135px;
+	background-color: #e5a227;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.tarjeta {
+	float: left;
+	margin-left: 30px; 
+}
+
+.paypal {
+	float: right;
+	margin-right: 30px;
+}
+
+.text-over-input {
+	margin-left: 20px;
+}
+
+.datos-box {
+	width: 320px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+ .top-text {
+ 	text-align: center;
+ 	font-size: 23px;
+ 	margin-top: 20px;
+ }
+
+#card {
+	font-size: 80px;
+	text-decoration: none;
+	color: #000;
+	margin-top: 10px;
+}
+
+.texto-cuadro {
+	color: #000;
+	font-size: 30px;
+}
+
+.boton-final {
+	text-align: center;
+}
+
+.box-tarjeta:hover {
+	cursor: pointer;
+}
