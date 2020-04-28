@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>APP</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/menu_user.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script type="text/javascript" src="js/menu_user.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
+</head>
+<body>
+    <!-- main app sreen -->
+    <div class="app-container">
+        <a href="menu.html" class="back"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        
+        <h2 id="top-text">Usuario</h2>
+        
+        <div id="register-box">
+            <h2 class="text_over_input">NOMBRE</h2>
+            <input type="text" id="name" name="name" required minlength="5" maxlength="50" disabled>
+            
+            <h2 class="text_over_input">APELLIDOS</h2>
+            <input type="text" id="last_name" name="last_name" required minlength="5" maxlength="50" disabled>
+            
+            <h2 class="text_over_input">TELÉFONO</h2>
+            <div class="div_input">
+            <input type="number" id="phone" name="phone" required minlength="5" maxlength="50" disabled>
+            <i onclick="enableedit('phone')" class="fas fa-pen pencil"></i>
+            </div>
+            
+            <h2 class="text_over_input">EMAIL</h2>
+            <div class="div_input">
+            <input type="text" id="mail" name="mail" required minlength="5" maxlength="50" placeholder="ejemplo@ejemplo.com" disabled>
+            <i onclick="enableedit('mail')" class="fas fa-pen pencil"></i>
+            </div>
+            
+            <h2 class="text_over_input">CAMBIAR CONTRASEÑA</h2>
+            <input type="password" id="pass" name="password" required minlength="5" maxlength="50" spellcheck="false">
+            
+            <h2 class="text_over_input">CONFIRMAR CONTRASEÑA</h2>
+            <input type="password" id="pass2" name="password2" required minlength="5" maxlength="50" spellcheck="false">
+            
+            <script>
+            document.getElementById("name").placeholder = getCookie("name");
+            document.getElementById("last_name").placeholder = getCookie("last_name");
+            document.getElementById("phone").placeholder = getCookie("phone");
+            document.getElementById("mail").placeholder = getCookie("mail");
+            </script>
+            
+        </div>
+        <button class="standar-big-button" id="continue-button" onclick="continue_button()">CONFIRMAR</button>
+    
+    </div>
+</body>
+</html>

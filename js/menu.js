@@ -3,7 +3,7 @@ function hidemenu() {
 }
 
 function Usuario() {
-     window.location.href = "inicio.html";
+     window.location.href = "menu_user.html";
 }
 
 function vehiculos() {
@@ -16,6 +16,10 @@ function pagos() {
 
 function reservas() {
      window.location.href = "inicio.html";
+}
+
+function informacion() {
+    window.location.href = "contacto.html"
 }
 
 function logout() {
