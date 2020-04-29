@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Pago</title>
@@ -13,21 +13,17 @@
 		<header>
 			<h2 class="top-text">Selecciona una forma de pago</h2>
 		</header>
-
-		<div class="box-tarjeta" onclick="document.getElementById('datos-box').style.visibility='visible'">
-			<div class="tarjeta">
-				<i class="fas fa-credit-card" id="card"></i>
-				<div class="texto-cuadro"><b>TARJETA</b></div>
-			</div>
-		</div>
-		<a href="#">
-			<div class="paypal">
-				<i class="fab fa-paypal" id="card"></i>
-				<div class="texto-cuadro"><b>PAYPAL</b></div>
-			</div>
-		</a>
-
-		<div class="datos-box" id="datos-box" style="visibility: hidden;">
+        <div id="buttons">
+            <div class="box-tarjeta" id="button-tarjeta" onclick="tarjeta()">
+                <i class="fas fa-credit-card" id="card"></i>
+                <div class="texto-cuadro"><b>TARJETA</b></div>
+            </div>
+            <div class="box-tarjeta" id="button-paypal" onclick="paypal()">
+                <i class="fab fa-paypal" id="card"></i>
+                <div class="texto-cuadro"><b>PAYPAL</b></div>
+            </div>
+        </div>
+		<div id="datos-box" style="visibility: hidden;">
 			<h2 class="text-over-input">NOMBRE</h2>
 			<input type="text" id="name" name="name" required minlength="2" maxlength="50">
 
@@ -42,6 +38,10 @@
 
 			<div class="boton-final"><input class="standar-big-button" type="submit" value="REGISTRARSE" onclick="continue_button()" style="margin-top: 20px;"></div>
 		</div>
+        
+        <div id="paypal-box" style="visibility: hidden;">
+            <button onclick="gopaypal_button()" class="standar-big-button">IR A PAYPAL</button>
+        </div>
 
 	</div>
 </body>
