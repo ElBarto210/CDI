@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
+    <title>APP</title>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/recuperar.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script type="text/javascript" src="js/recuperar.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
 </head>
 <body>
-
+    <!-- main app sreen -->
+    <div class="app-container">
+        <a href="login.html" class="back"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        
+        <h2 id="top-text">Recuperar contraseña</h2>
+        
+        <h2 class="text_over_input">EMAIL</h2>
+        <input type="text" id="mail" name="mail" required minlength="5" maxlength="50" placeholder="ejemplo@ejemplo.com" disabled>
+        
+        <button class="standar-big-button" id="enviar-button" onclick="enviar_button()">ENVIAR</button>
+        
+        <p id="sended">Si existe una cuenta asociada al email recibirá un correo electrónico para restablecer la contraseña</p>
+    
+    </div>
 </body>
 </html>

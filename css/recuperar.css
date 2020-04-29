@@ -1,0 +1,27 @@
+#top-text {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 90px;
+}
+
+.text_over_input {
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+#mail {
+    margin-left: 30px;
+}
+
+#enviar-button {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+#sended {
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: center;
+    visibility: hidden;
+}
