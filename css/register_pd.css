@@ -26,6 +26,10 @@
     margin-right: 60px
 }
 
+#back_arrow {
+    position: absolute !important;
+}
+
 .text_over_input {
     margin-left: 20px;
     margin-top: 6px
