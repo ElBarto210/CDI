@@ -8,6 +8,7 @@ function getCookie(name) {
 //HABILITAR EDICION DE CAMPOS
 function enableedit(field) {
     document.getElementById(field).disabled = false;
+    document.getElementById(field).placeholder = " ";
 }
 
 function continue_button() {
@@ -19,20 +20,30 @@ function continue_button() {
     var pass2 = document.getElementById("pass2").value;
     
     
+    if(pass == pass2) {
+       if(name!="") {
+            document.cookie = "name=" + name + ";";
+        }
+        
+        if(last_name!="") {
+            document.cookie = "last_name=" + last_name + ";";
+        }
+        
+        if(phone!="") {
+            document.cookie = "phone=" + phone + ";";
+        }
     
-    if(pass == pass2 and (pass!="" and pass2!="") {
-        document.cookie = "name=" + name + ";";
-        document.cookie = "last_name=" + last_name + ";";
-        document.cookie = "phone=" + phone + ";";
-        document.cookie = "name=" + name + ";";
+        if(mail!="") {
+            document.cookie = "mail=" + mail + ";";
+        }
+        
         document.cookie = "pass" + pass + ";";
         
-        window.location.href = "register_vh.html";
+        window.location.href = "menu.html";
     } 
-
-    //add not update if blank
     
     else {
-        window.alert("Las contraseñas no son iguales");
+        window.alert("Las contraseñas no son coinciden");
     }
+    
 }
