@@ -1,0 +1,119 @@
+ .info-aparcamiento {
+    height: 80%;
+    background-color: #f2e9db;
+    padding: 10px;
+ }
+
+ .Informacion-top-text {
+    text-align: center;
+    margin-bottom: 19px;
+    margin-top: 0;
+    font-size: 22px;
+ }
+
+ .info-aparcamiento h3{
+     text-align: center;
+ }
+
+ .info-aparcamiento p{
+    text-align: center;
+    margin: 10px 50px;
+ }
+
+.info-aparcamiento .division_principal {
+    height: 5px;
+    color: #ffcc66;
+    background-color: #ffcc66;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#select-button {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 60px;
+}
+
+.map {
+    margin-right: 20px;
+    height: 100px;
+    width: 150px;
+    float: right;
+    display:inline-block;
+}
+
+#icon {
+    width: 40px;
+    height: 70px;
+    margin-right: 40px;
+    margin-left: 45px;
+    margin-bottom: -10px;
+}
+
+.distance {
+    width: 10px;
+    height: 100px;
+    margin-left: 30px;
+    display:inline-block;
+}
+
+.features {
+    margin-left: 80px;
+    height:30px;
+    width: auto;
+    display: inline-block;
+}
+
+.small_icon {
+    height:20px;
+    width:20px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+#small_icon {
+    height: 20px;
+    width: 20px;
+}
+
+.lista_iconos {
+    height: 25px;
+    width: 80px;
+    float: right;
+    margin-right:60px;
+    display: inline-block;
+}
+
+.baño {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+.accesibilidad {
+    height:20px;
+    margin-left: 40px;
+    width: auto;
+    display: inline-block;
+}
+
+.div_boton{
+    margin-top: 5px;
+    margin-left: 00px;
+}
+
+#boton{
+    height: 70px;
+    width: 70px;
+    color: #ffcc66;
+}
+
+#boton:hover {
+    color: #E7A318;
+}
+
+
+
+
+
+

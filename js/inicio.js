@@ -1,3 +1,4 @@
+
 function Search_destination() {
     var destination = document.getElementById("destination").value;
 
@@ -14,4 +15,8 @@ function getUsername() {
 
 function displaymenu() {
     window.location.href = "menu.html";
+}
+
+function login() {
+    window.location.href = "login.html";
 }

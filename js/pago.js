@@ -23,8 +23,9 @@ function continue_button() {
         var cvv3 = sessionStorage.setItem('cvv3',cvv );
         var caducidad3 = sessionStorage.setItem('caducidad3',caducidad );
     }
-    
-    window.location.href = "inicio.html"
+
+    window.location.href = "principal.html"
+
 }
 
 
@@ -60,5 +61,5 @@ function paypal() {
 }
 
 function gopaypal_button() {
-    window.location.href = "inicio.html"
+    window.location.href = "principal.html"
 }
