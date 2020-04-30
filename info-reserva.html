@@ -28,7 +28,29 @@
 
 		<footer>
 			<hr>
-			<div class="text-box"><p class="bottom-text">Deberá ocupar la plaza antes de (60-tiempo desde reserva)minutos</p></div>
+			 <p id="cuentaAtras"></p>
+
+            <script>
+                var horaExpiracion = new Date().getTime()+3600000;
+
+                var x = setInterval(function() {
+
+                  var horaActual = new Date().getTime();
+
+                  var tiempoRestante = horaExpiracion - horaActual;
+
+                  var minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+                  var segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
+                  
+                  document.getElementById("cuentaAtras").innerHTML = minutos + ":" + segundos;
+
+                  if (tiempoRestante < 3585000) {
+                    clearInterval(x);
+                    document.getElementById("cuentaAtras").innerHTML = "Reserva cancelada";
+                  }
+                }, 1000);
+            </script>
+            
 			<button class="standar-big-button" onclick="aceptar_button()">ACEPTAR</button>
 		</footer>
 	</div>

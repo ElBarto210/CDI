@@ -14,8 +14,8 @@ function pagos() {
      window.location.href = "principal.html";
 }
 
-function reservas() {
-     window.location.href = "principal.html";
+function reserva() {
+     window.location.href = "info-reserva.html";
 }
 
 function informacion() {
