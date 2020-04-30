@@ -102,3 +102,23 @@ hr {
     padding: 0;
 }
 
+.icono-boton-busqueda {
+    background-color: #e69900;
+    padding: 20px;
+    position: absolute;
+    width: 35px !important;
+    height: 35px !important;
+    top: 480px;
+    left: 142px;
+    color: white;
+    cursor: pointer;
+    border: 5px;
+    border-style: solid;
+    border-color: #F9B52F;
+    border-radius: 90px;
+}
+
+.icono-boton-busqueda:hover {
+    border-color: floralwhite;
+}
+

@@ -97,20 +97,11 @@
     display: inline-block;
 }
 
-.div_boton{
-    margin-top: 5px;
-    margin-left: 00px;
+.icono-boton-busqueda {
+    top: 500px !important;
+    left: 130px !important;
 }
 
-#boton{
-    height: 70px;
-    width: 70px;
-    color: #ffcc66;
-}
-
-#boton:hover {
-    color: #E7A318;
-}
 
 
 

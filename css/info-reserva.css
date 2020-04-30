@@ -1,0 +1,66 @@
+.top-text {
+	text-align: center;
+	font-size: 25px;
+	margin-top: 64px;
+	margin-bottom: 10px;
+}
+
+.info-box{
+	background-color: #f2e9db;
+	padding-bottom: 20%;
+}
+
+h1{
+	font-size: 20px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.text-box {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.num-plaza {
+	text-align: center;
+	font-size: 20px;
+}
+ .tipo-plaza {
+ 	display: inline-block;
+ 	float: left;
+ 	font-size: 22px;
+ 	font-weight: bold;
+ }
+
+ .icons {
+ 	display: inline-block;
+ 	font-size: 25px;
+ }
+
+ .calle {
+ 	font-size: 22px;
+ 	font-weight: bold;
+ }
+
+ footer {
+	background-color: #f2e9db;
+	padding-top: 1px;
+	padding-bottom: 25px;
+ }
+
+ .bottom-text{
+ 	text-align: center;
+ 	font-size: 22px;
+ 	font-weight: bold;
+ }
+
+ .standar-big-button:hover{
+	cursor: pointer;
+	border: none;
+}
+
+.standar-big-button{
+	width: 60%;
+	margin-left: 20%;
+}

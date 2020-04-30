@@ -1,0 +1,61 @@
+.top-text {
+	text-align: center;
+	font-size: 20px;
+	font-weight: lighter;
+	margin-bottom: 10px;
+}
+
+.distancia {
+	display: inline-block;
+	text-align: center;
+	font-size: 17px;
+	margin-left: 10px;
+}
+
+.datos-parking {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.datos-parking p{
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.datos-parking .calle{
+	display: inline-block;
+}
+
+.datos-parking .icons{
+	display: inline-block;
+	float: right;
+	font-size: 27px;
+}
+
+.info-box{
+	background-color: #f2e9db;
+	padding-bottom: 70%;
+}
+
+.back {
+	width: 35px;
+}
+
+.parking-box {
+	background-color: #f2e9db;
+	width: 90%;
+	margin: auto;
+}
+
+.parking-box:hover{
+	cursor: pointer;
+}
+
+.parking-box:focus{
+	background-color: #e5a227;
+}
+
+.icono-boton-busqueda {
+    left: 230px !important;
+}

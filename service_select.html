@@ -10,7 +10,10 @@
 </head>
 <body>
 	<div class="app-container">
-        <a href="inicio.html" class="back" id="back-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        <iframe src="mant_gen_select.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" style="visibility: hidden" id="pop-window">
+        </iframe>
+        
+        <a href="principal.html" class="back" id="back-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
 		<header>
 			<h2 id="top-text">¿Qué quieres hacer?</h2>
 		</header>
@@ -42,7 +45,7 @@
 		</div>
         
         <div id="buscar">
-            <button onclick="buscar()" class="standar-big-button">BUSCAR</button>
+            <i onclick="buscar()" class="fas fa-search icono-boton-busqueda"></i>
         </div>
 
 	</div>
