@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>APP</title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/service_select.css">
+	<script type="text/javascript" src="js/service_select.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
+</head>
+<body>
+	<div class="app-container">
+        <a href="inicio.html" class="back" id="back-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+		<header>
+			<h2 id="top-text">¿Qué quieres hacer?</h2>
+		</header>
+        <div id="buttons">
+            <div class="box-select" id="aparcar" onclick="aparcar()">
+                <i class="fas fa-parking icon"></i>
+                <p class="texto-cuadro">APARCAR</p>
+            </div>
+            <div class="box-select" id="mant_general" onclick="mant_general()">
+                <i class="fas fa-wrench icon"></i>
+                <p class="texto-cuadro">MANTENIMIENTO GENERAL</p>
+            </div>
+        </div>
+        
+		<div id="plate-selector">
+            <p id="plate-number" class="plate">0000AAA</p>
+            <a id="down-arrow" onclick="list_plates()">
+                <i class="fas fa-chevron-down" id="arrow-size"></i>
+            </a>
+		</div>
+        
+        <div id="full-plate-selector" style="visibility: hidden">
+            <p onclick="plate1()" class="plate-list">0000AAA</p>
+            <p onclick="plate2()" class="plate-list">1234ABC</p>
+            <p onclick="plate3()" class="plate-list" style="border-bottom-style: hidden;">3124KSD</p>
+            <a id="up-arrow" onclick="hide_plates()">
+                <i class="fas fa-chevron-up" id="arrow-size"></i>
+            </a>
+		</div>
+        
+        <div id="buscar">
+            <button onclick="buscar()" class="standar-big-button">BUSCAR</button>
+        </div>
+
+	</div>
+</body>
+</html>
