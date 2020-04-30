@@ -3,7 +3,7 @@ function login() {
     var pass = document.getElementById("pass").value;
         
     if((mail == sessionStorage.getItem('mail')) && (pass == sessionStorage.getItem('pass')) || ((mail == 'admin') && (pass == 'admin'))){
-        window.location.href = "inicio.html";
+        window.location.href = "principal.html";
     }
     
     else{

@@ -1,5 +1,5 @@
 function hidemenu() {
-     window.location.href = "inicio.html";
+     window.location.href = "principal.html";
 }
 
 function Usuario() {
@@ -7,15 +7,15 @@ function Usuario() {
 }
 
 function vehiculos() {
-     window.location.href = "inicio.html";
+     window.location.href = "principal.html";
 }
 
 function pagos() {
-     window.location.href = "inicio.html";
+     window.location.href = "principal.html";
 }
 
 function reservas() {
-     window.location.href = "inicio.html";
+     window.location.href = "principal.html";
 }
 
 function informacion() {
@@ -23,7 +23,7 @@ function informacion() {
 }
 
 function logout() {
-     window.location.href = "start.html";
+     window.location.href = "inicio.html";
     delete_cookie("mail");
     sessionStorage.removeItem('mail');
     sessionStorage.removeItem('name');
