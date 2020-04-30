@@ -62,11 +62,12 @@
 	margin-left: 20px;
 	margin-right: 20px;
 }
- .top-text {
+
+.top-text {
  	text-align: center;
  	font-size: 23px;
  	margin-top: 20px;
- }
+}
 
 #card {
 	font-size: 80px;

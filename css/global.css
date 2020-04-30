@@ -87,6 +87,7 @@ button:focus{
     color: #000;
     margin-left: 12px;
     margin-top: 12px;
+    width: 30px;
     font-size: 35px;
 }
 
