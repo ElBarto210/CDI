@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>APP</title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/mant_gen_select.css">
+	<script type="text/javascript" src="js/service_select.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
+</head>
+<body>
+	<div class="app-container">
+        <i onclick="volver()" class="back" id="back-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></i>
+		<header>
+			<h2 id="top-text">¿Qué quieres hacer?</h2>
+		</header>
+        <div id="buttons">
+            <div class="col">
+                <div class="box-select" id="repostar" onclick="repostar()">
+                    <i class="fas fa-gas-pump icono-repostar"></i>
+                    <p class="texto-cuadro">REPOSTAR</p>
+                </div>
+                <div class="box-select" id="aceite" onclick="aceite()">
+                    <i class="fas fa-oil-can icono-aceite"></i>
+                    <p class="texto-cuadro">CAMBIO DE ACEITE</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box-select" id="presion" onclick="presion()">
+                    <img src="https://image.flaticon.com/icons/svg/638/638410.svg" id="icon-dif">
+                    <p class="texto-cuadro">PRESIÓN DE NEUMATICOS</p>
+                </div>
+                <div class="box-select" id="lavado" onclick="lavado()">
+                    <img src="https://image.flaticon.com/icons/svg/565/565369.svg" id="icon-dif">
+                    <p class="texto-cuadro">LAVADO</p>
+                </div>
+            </div>
+        </div>
+	</div>
+</body>
+</html>
