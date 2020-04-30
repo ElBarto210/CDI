@@ -8,8 +8,8 @@ function Search_destination() {
 
 function getUsername() {
     var name = sessionStorage.getItem('name')
-    if(name === " "){
-        name = "Username";
+    if(name == null){
+        name = "admin";
     }
     return name;
 }
