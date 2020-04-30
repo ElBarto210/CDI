@@ -59,13 +59,15 @@ h1 {
 .feature_icons{
     width: 25px !important;
     height: 25px !important;
+    margin: 2px;
 }
 .feature_icon_box{
-    width: 20px;
+    width: 60px;
     height: 20px;
     margin-left: 202px;
-    margin-top: -62px;
+    margin-top: -64px;
 }
+
 
 .thrash_icon{
     width: 30px !important;
