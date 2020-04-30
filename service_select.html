@@ -8,11 +8,8 @@
 	<script type="text/javascript" src="js/service_select.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
 </head>
-<body>
+<body onload="actualizar()">
 	<div class="app-container">
-        <iframe src="mant_gen_select.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" style="visibility: hidden" id="pop-window">
-        </iframe>
-        
         <a href="principal.html" class="back" id="back-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
 		<header>
 			<h2 id="top-text">¿Qué quieres hacer?</h2>
@@ -44,9 +41,7 @@
             </a>
 		</div>
         
-        <div id="buscar">
-            <i onclick="buscar()" class="fas fa-search icono-boton-busqueda"></i>
-        </div>
+        <i onclick="buscar()" class="fas fa-search icono-boton-busqueda"></i>
 
 	</div>
 </body>

@@ -23,14 +23,17 @@
     position: absolute;
     width: 150px;
     height: 200px;
-    background-color: #e5a227;
+    background-color: #e7a732;
     cursor: pointer; 
     border: 0;
 }
 
 .box-select:hover {
-    background-color: #CA8D13;
-    cursor: pointer; 
+    /*background-color: #f8b020;*/
+    outline-color: floralwhite;
+    outline-style: solid;
+    outline-width: 4px;
+    outline-offset: 0px;
 }
 
 #repostar {
@@ -69,7 +72,7 @@
 
 #back-arrow {
     position: absolute;
-    
+    cursor: pointer;
 }
 
 

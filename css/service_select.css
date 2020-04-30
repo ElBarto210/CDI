@@ -1,10 +1,3 @@
-#pop-window {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-
 #top-text {
     font-size: 22px;
     text-align: center;
@@ -13,6 +6,7 @@
 
 #back-arrow {
     position: absolute !important;
+    cursor: pointer;
 }
 
 #buttons {
@@ -114,13 +108,17 @@
 .box-select {
     width: 100%;
     height: 120px;
-    background-color: #e5a227;
+    background-color: #e7a732;
     margin-bottom: 20px;
     cursor: pointer;
 }
 
 .box-select:hover {
-    background-color: #CA8D13;
+    /*background-color: #f8b020;*/
+    outline-color: floralwhite;
+    outline-style: solid;
+    outline-width: 4px;
+    outline-offset: 0px;
 }
 
 .icon {

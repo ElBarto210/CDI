@@ -1,3 +1,13 @@
+var Vaparcar = "false";
+
+function actualizar() {
+    Vaparcar = sessionStorage.getItem("aparcar");
+
+    if(Vaparcar == "true") {
+        document.getElementById("aparcar").style.background="#CA8D13";
+    } 
+}
+
 function list_plates() {
     document.getElementById("full-plate-selector").style.visibility="visible";
 }
@@ -21,66 +31,24 @@ function plate3() {
     document.getElementById("plate-number").innerHTML="3124KSD";
 }
 
+
+function aparcar() {
+    if(Vaparcar=="true") {  
+        Vaparcar = "false";
+        document.getElementById("aparcar").style.background="#e7a732";
+    }
+    else {
+        document.getElementById("aparcar").style.background="#CA8D13";
+        Vaparcar = "true";
+    }
+}
+
 function mant_general() {
-    document.getElementById("pop-window").style.visibility="visible";
+    sessionStorage.setItem("aparcar",Vaparcar);
+    window.location.href = "mant_gen_select.html";
 }
 
 function buscar() {
+    sessionStorage.setItem("aparcar",Vaparcar);
     window.location.href = "aparcamientos.html";
-}
-
-
-//MANTENIMIENTO GENERAL
-var Vrepostar = false;
-var Vaceite = false;
-var Vpresion = false;
-var Vlavado = false;
-
-
-function repostar() {
-    if(Vrepostar==false){
-        document.getElementById("repostar").style.background="#CA8D13";
-        Vrepostar=true;
-    }
-    else {
-        document.getElementById("repostar").style.background="#e5a227";
-        Vrepostar=false;
-    }
-}
-
-function aceite() {
-    if(Vaceite==false){
-        document.getElementById("aceite").style.background="#CA8D13";
-        Vaceite=true;
-    }
-    else {
-        document.getElementById("aceite").style.background="#e5a227";
-        Vaceite=false;
-    }
-}
-
-function presion() {
-    if(Vpresion==false){
-        document.getElementById("presion").style.background="#CA8D13";
-        Vpresion=true;
-    }
-    else {
-        document.getElementById("presion").style.background="#e5a227";
-        Vpresion=false;
-    }
-}
-
-function lavado() {
-    if(Vlavado==false){
-        document.getElementById("lavado").style.background="#CA8D13";
-        Vlavado=true;
-    }
-    else {
-        document.getElementById("lavado").style.background="#e5a227";
-        Vlavado=false;
-    }
-}
-
-function volver() {
-    window.location.href = "service_select.html";
 }
