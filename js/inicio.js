@@ -1,8 +1,6 @@
 function Search_destination() {
     var destination = document.getElementById("destination").value;
 
-    sessionStorage.setItem('destination' , destination);
-
     window.location.href = "buscador.html";
 }
 

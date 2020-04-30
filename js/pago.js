@@ -4,11 +4,26 @@ function continue_button() {
     var cvv = document.getElementById("cvv").value;
     var caducidad = document.getElementById("caducidad").value;
 
-    document.cookie = "nametarjeta="+nametarjeta;
-    document.cookie = "numtarjeta="+numtarjeta;
-    document.cookie = "cvv="+cvv;
-    document.cookie = "caducidad="+caducidad;
+    var nametarjeta = sessionStorage.setItem('name',nametarjeta );
+    var numtarjeta = sessionStorage.setItem('tarjeta',numtarjeta );
+    var cvv = sessionStorage.setItem('cvv',cvv );
+    var caducidad = sessionStorage.setItem('caducidad',caducidad );
 
+    if(nametarjeta != null){
+
+        var nametarjeta2 = sessionStorage.setItem('name2',nametarjeta );
+        var numtarjeta2 = sessionStorage.setItem('tarjeta2',numtarjeta );
+        var cvv2 = sessionStorage.setItem('cvv2',cvv );
+        var caducidad2 = sessionStorage.setItem('caducidad2',caducidad );
+    }
+
+    else if(nametarjeta2 !=null){
+        var nametarjeta3 = sessionStorage.setItem('name3',nametarjeta );
+        var numtarjeta3 = sessionStorage.setItem('tarjeta3',numtarjeta );
+        var cvv3 = sessionStorage.setItem('cvv3',cvv );
+        var caducidad3 = sessionStorage.setItem('caducidad3',caducidad );
+    }
+    
     window.location.href = "inicio.html"
 }
 
@@ -20,7 +35,6 @@ function tarjeta() {
     }
     else {
         document.getElementById('datos-box').style.visibility='visible'
-        document.getElementById;
         document.getElementById('button-tarjeta').style.background='#CA8D13';
         document.getElementById('button-paypal').style.background='#e5a227';
     } 
