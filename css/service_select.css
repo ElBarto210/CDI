@@ -1,0 +1,131 @@
+#top-text {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#back-arrow {
+    position: absolute !important;
+}
+
+#buttons {
+    width: 300px;
+    height: 280px;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+#aparcar p{
+    font-size: 30px;
+    padding-top: 45px;
+}
+
+#mant_general p{
+    font-size: 23px;
+    padding-top: 33px;
+    padding-left: 10px;
+}
+
+#plate-selector {
+    background-color: aliceblue;
+    border: solid;
+    border-radius: 50px;
+    width: 240px;
+    height: 45px;
+    border-color: #e69900;
+    margin-left: 55px;
+    margin-top: 5px;
+}
+
+.plate {
+    position: fixed;
+    width: 240px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.plate-list {
+    position: relative;
+    width: 240px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    padding-bottom: 7px;
+    padding-top: 0px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#up-arrow {
+    position: absolute;
+    margin-left: 190px;
+    top: 7px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+#down-arrow {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+#arrow-size {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#full-plate-selector {
+    position: absolute;
+    background-color: aliceblue;
+    border: solid;
+    border-radius: 25px;
+    width: 240px;
+    height: 138px;
+    border-color: #e69900;
+    top: 392px;
+    left: 55px;
+    z-index: 1;
+}
+
+#buscar {
+    margin-top: 30px;
+    margin-left: 65px;
+}
+
+.box-select {
+    width: 100%;
+    height: 120px;
+    background-color: #e5a227;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.box-select:hover {
+    background-color: #CA8D13;
+}
+
+.icon {
+    width: 80px !important;
+    height: 80px !important;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.texto-cuadro {
+    font-weight: bold;
+    margin-left: 90px;
+    text-align: center;
+}
