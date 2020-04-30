@@ -46,7 +46,8 @@ h1{
  footer {
 	background-color: #f2e9db;
 	padding-top: 1px;
-	padding-bottom: 25px;
+	padding-bottom: 50px;
+     
  }
 
  .bottom-text{
@@ -63,4 +64,10 @@ h1{
 .standar-big-button{
 	width: 60%;
 	margin-left: 20%;
+}
+
+#cuentaAtras {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
 }
