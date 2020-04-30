@@ -41,10 +41,10 @@
             <input type="password" id="pass2" name="password2" required minlength="5" maxlength="50" spellcheck="false">
             
             <script>
-            document.getElementById("name").placeholder = getCookie("name");
-            document.getElementById("last_name").placeholder = getCookie("last_name");
-            document.getElementById("phone").placeholder = getCookie("phone");
-            document.getElementById("mail").placeholder = getCookie("mail");
+            document.getElementById("name").placeholder = sessionStorage.getItem('name');
+            document.getElementById("last_name").placeholder = sessionStorage.getItem("last_name");
+            document.getElementById("phone").placeholder = sessionStorage.getItem("phone");
+            document.getElementById("mail").placeholder = sessionStorage.getItem("mail");
             </script>
             
         </div>

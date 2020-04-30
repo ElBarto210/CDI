@@ -17,6 +17,9 @@ function continue_button() {
         
         window.location.href = "register_vh.html";
     } 
+    else {
+        window.alert("Las contraseñas no son iguales");
+    }
 
     if(mail == 'ejemplo@hotmail.com') {
         window.alert("El email introducido ya está en uso");
@@ -33,8 +36,5 @@ function continue_button() {
             window.location.href = "register_vh.html";
         } 
         
-        else {
-            window.alert("Las contraseñas no son iguales");
-        }
     }
 }
