@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/inicio.css">
+        <link rel="stylesheet" href="css/global.css">
+        <script type="text/javascript" src="js/inicio.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
+        <title>Inicio</title>
+    </head>
+    <body>
+    <div class="app-container">
+        <i onclick="displaymenu()" class="fas fa-bars" id="menu-button" ></i>
+        
+        <i class="fas fa-map-marker-alt" id="icon"></i>
+        <p id="info-text">¿Cual es tu destino?</p>
+        <input type="text" id="location" name="destination" placeholder="Paseo de la Castellana, 18">
+        <button href="buscador.html" id="buscar" onclick="Search_destination()" class="standar-big-button">BUSCAR</button>
+        <br/>
+        
+        <div id="texto-inferior">
+            <p style="font-size: 20px">¡Hola, <span id="username"></span>!</p>
+            <p>Si no eres <span id="username2"></span>, toca <a href="login.html" id="aqui">aquí</a></p>
+        </div>
+        <script>
+            document.getElementById("username").innerHTML = getUsername();
+            document.getElementById("username2").innerHTML = getUsername();
+        </script>
+    </div>
+    </body>
+</html>
