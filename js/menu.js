@@ -25,6 +25,15 @@ function informacion() {
 function logout() {
      window.location.href = "start.html";
     delete_cookie("mail");
+    sessionStorage.removeItem('mail');
+    sessionStorage.removeItem('name');
+    sessionStorage.removeItem('last_name');
+    sessionStorage.removeItem('phone');
+    sessionStorage.removeItem('pass');
+    sessionStorage.removeItem('vhmarca');
+    sessionStorage.removeItem('vhmodelo');
+    sessionStorage.removeItem('vhmatricula');
+
     //delete rest of cookies
 }
 

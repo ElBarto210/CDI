@@ -1,39 +1,24 @@
-function getCookie(cname) {
-    var value = " ";
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(";");
-    for(var i = 0; i<ca.length; i++){
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            value = c.substring(name.length, c.length);
-        }
-    }
-    return value;
-}
-
-
 function changeFeature(feature) {
-    if (getCookie(feature) !== "1") {
-        document.cookie = feature + "= 1;";
+    if(sessionStorage.getItem(feature) == "1" ){
+        sessionStorage.removeItem(feature);
+        document.getElementById(feature).style = "feature_button"
     }
     else{
-        document.cookie = feature + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;"
+        sessionStorage.setItem(feature, "1");
+        document.getElementById(feature).style.backgroundColor = "#a36d09";
+        document.getElementById(feature).style.color = "#ffffff";
     }
-
 }
 
 function continue_button() {
+
     var vhmarca = document.getElementById("vhmarca").value;
     var vhmodelo = document.getElementById("vhmodelo").value;
     var vhmatricula = document.getElementById("vhmatricula").value;
 
-    document.cookie = "vhmatricula="+vhmatricula;
-    document.cookie = "vhmodelo="+vhmodelo;
-    document.cookie = "vhmarca="+vhmarca;
+    sessionStorage.setItem("vhmarca", vhmarca);
+    sessionStorage.setItem("vhmodelo", vhmodelo);
+    sessionStorage.setItem("vhmatricula", vhmatricula);
 
-    window.location.href = "pago.html"
+    window.location.href = "pago.html";
 }

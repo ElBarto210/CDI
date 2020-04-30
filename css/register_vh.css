@@ -1,0 +1,60 @@
+#top-text {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#register-box {
+    width: 310px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#ytc {
+    margin-top: 10px;
+    margin-left: 100px;
+    display: inline-block;
+    color: black;
+    width: 150px;
+}
+
+#continue-button {
+    margin-top: 20px;
+
+    margin-left: 60px;
+    margin-right: 60px
+}
+
+#back_arrow {
+    position: absolute !important;
+}
+
+.feature_button {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	background-color: #e5a227;
+	text-align: center;
+	margin-top: 20px;
+    margin-left: 22px;
+    margin-bottom: 10px;
+	text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    font-size: 25px;
+}
+
+.feature_button:hover{
+    background-color: #a36d09;
+    color: white;
+    cursor: pointer;
+}
+
+.text_over_input {
+    margin-left: 20px;
+    margin-top: 6px
+}
+
+

@@ -4,7 +4,7 @@
     <title>APP</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/register_pd.css">
+    <link rel="stylesheet" href="css/register_vh.css">
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
     <script type="text/javascript" src="js/register_vh.js"></script>
 </head>
@@ -24,8 +24,12 @@
 
         <h2 class="text_over_input">MATRÍCULA</h2>
         <input type="text" id="vhmatricula" name="vhmatricula">
-
-        <button style="padding: 10px" onclick="changeFeature('wheelchair')"><i class="fas fa-wheelchair"></i></button>
+        <div>
+            <button class="feature_button" id="wheelchair" onclick="changeFeature('wheelchair')"><i class="fas fa-wheelchair"></i></button>
+            <button class="feature_button" id="baby-carriage" onclick="changeFeature('baby-carriage')"><i class="fas fa-baby-carriage"></i></button>
+            <button class="feature_button" id="truck" onclick="changeFeature('truck')"><i class="fas fa-truck"></i></button>
+            <button class="feature_button" id="charging-station" onclick="changeFeature('charging-station')"><i class="fas fa-charging-station"></i></button>
+        </div>
 
     </div>
     <button class="standar-big-button" id="continue-button" onclick="continue_button()">CONTINUAR</button>

@@ -6,14 +6,12 @@ function continue_button() {
     var pass = document.getElementById("pass").value;
     var pass2 = document.getElementById("pass2").value;
     
-    
-    
     if(pass == pass2) {
-        document.cookie = "name=" + name + ";";
-        document.cookie = "last_name=" + last_name + ";";
-        document.cookie = "phone=" + phone + ";";
-        document.cookie = "name=" + name + ";";
-        document.cookie = "pass" + pass + ";";
+        sessionStorage.setItem("name", name);
+        sessionStorage.setItem("last_name", last_name);
+        sessionStorage.setItem("phone", phone);
+        sessionStorage.setItem("mail", mail);
+        sessionStorage.setItem("pass", pass);
         
         window.location.href = "register_vh.html";
     } 

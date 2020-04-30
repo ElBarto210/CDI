@@ -1,13 +1,13 @@
 function Search_destination() {
     var destination = document.getElementById("destination").value;
 
-    document.cookie = "destination=" + destination + ";";
+    sessionStorage.setItem('destination' , destination);
 
     window.location.href = "buscador.html";
 }
 
 function getUsername() {
-    var name = getCookie("name");
+    var name = sessionStorage.getItem('name')
     if(name === " "){
         name = "Username";
     }

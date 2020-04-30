@@ -22,22 +22,22 @@ function continue_button() {
     
     if(pass == pass2) {
        if(name!="") {
-            document.cookie = "name=" + name + ";";
+            sessionStorage.setItem('name', name);
         }
         
         if(last_name!="") {
-            document.cookie = "last_name=" + last_name + ";";
+            sessionStorage.setItem('last_name', last_name);
         }
         
         if(phone!="") {
-            document.cookie = "phone=" + phone + ";";
+            sessionStorage.setItem('phone', phone);
         }
     
         if(mail!="") {
-            document.cookie = "mail=" + mail + ";";
+            sessionStorage.setItem('mail', mail);
         }
         
-        document.cookie = "pass" + pass + ";";
+        sessionStorage.setItem('pass', pass);
         
         window.location.href = "menu.html";
     } 
