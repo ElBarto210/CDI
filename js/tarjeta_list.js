@@ -5,7 +5,7 @@ function update(){
     if(sessionStorage.getItem('paypal') != null){
         pagos.push(sessionStorage.getItem('paypal'));
         sessionStorage.removeItem('paypal');
-    }else{
+    }else if (sessionStorage.getItem('tarjeta') != null){
         var tarjeta = sessionStorage.getItem('tarjeta');
         pagos.push(tarjeta);
         sessionStorage.removeItem('tarjeta');
