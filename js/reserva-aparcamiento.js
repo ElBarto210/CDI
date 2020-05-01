@@ -3,7 +3,7 @@ function reservar_button() {
 	var numeroHoras = document.getElementById("duracion").value;
 
     if(numeroHoras > 0) {
-        sessionStorage.setItem("numeroHoras", numeroHoras);
+        sessionStorage.setItem("precioAparcamiento", numeroHoras*3);
 
         var direccion = ["reserva-aparcamiento.html", "repostar.html", "lavado.html"];
         if(sessionStorage.getItem('repostar') == "true" ){
