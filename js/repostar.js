@@ -88,10 +88,18 @@ function precioRepostaje() {
         }
         document.getElementById("precioRepostaje").innerHTML = precioRepostaje+"€";
         
-        
+    
+    }
+
+}
+function next(){
+    var direccion = ["reserva-aparcamiento.html", "repostar.html", "lavado.html"];
+	if(sessionStorage.getItem('lavado') == "true" ){
+		window.location.href = direccion[2];
+	} else{
+        window.location.href = "eleccion_pago.html"
     }
 }
-
 
 
 

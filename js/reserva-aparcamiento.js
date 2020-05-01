@@ -1,7 +1,14 @@
 function reservar_button() {
 	var numeroHoras = document.getElementById("duracion").value;
 
-	document.cookie = "numeroHoras="+numeroHoras;
+	sessionStorage.setItem("numeroHoras", numeroHoras);
 
-	window.location.href = "inicio.html"
+	var direccion = ["reserva-aparcamiento.html", "repostar.html", "lavado.html"];
+	if(sessionStorage.getItem('repostar') == "true" ){
+		window.location.href = direccion[1];
+	} else if(sessionStorage.getItem('lavado') == "true" ){
+		window.location.href = direccion[2];
+	}
+	
+
 }
