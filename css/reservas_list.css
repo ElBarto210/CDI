@@ -31,7 +31,12 @@
     border-bottom: 2px;
     border-bottom-color: #F7F2E0;
     border-bottom-style: solid;
+    cursor: pointer;
 
+}
+
+.menu-button:hover{
+    background-color: rgb(226, 144, 57);
 }
 
 .icon {
