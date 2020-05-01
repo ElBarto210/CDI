@@ -1,5 +1,5 @@
 function carga_valores(){
-    sessionStorage.setItem("reservas", "1");
+    sessionStorage.setItem("reserva", "1");
 
     var aparcar = sessionStorage.getItem('aparcar');
     var repostar = sessionStorage.getItem('repostar');
