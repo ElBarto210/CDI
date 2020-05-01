@@ -35,20 +35,34 @@ function plate3() {
 function aparcar() {
     if(Vaparcar=="true") {  
         Vaparcar = "false";
+        sessionStorage.setItem("aparcar",Vaparcar);
         document.getElementById("aparcar").style.background="#e7a732";
     }
     else {
         document.getElementById("aparcar").style.background="#CA8D13";
         Vaparcar = "true";
+        sessionStorage.setItem("aparcar",Vaparcar);
     }
 }
 
+/*
+function onhoveraparcar(){
+    if(Vaparcar=="false") {
+        document.getElementById("aparcar").style.background="#f8b020";
+    }
+}
+
+function outhoveraparcar(){
+    if(Vaparcar=="false") {
+        document.getElementById("aparcar").style.background="#e7a732";
+    }
+}
+*/
+
 function mant_general() {
-    sessionStorage.setItem("aparcar",Vaparcar);
     window.location.href = "mant_gen_select.html";
 }
 
 function buscar() {
-    sessionStorage.setItem("aparcar",Vaparcar);
     window.location.href = "aparcamientos.html";
 }
