@@ -97,10 +97,18 @@ function next(){
 	if(sessionStorage.getItem('lavado') == "true" ){
 		window.location.href = direccion[2];
 	} else{
-        window.location.href = "eleccion_pago.html"
+        window.location.href = "eleccion_pago.html";
     }
 }
 
+function back(){
+    var direccion = ["reserva-aparcamiento.html", "repostar.html", "lavado.html"];
+    if(sessionStorage.getItem('aparcar') == true ){
+        window.location.href = direccion[0];
+    } else{
+        window.location.href = "info_aparcamiento.html";
+    }
+}
 
 
 

@@ -12,3 +12,9 @@ function reservar_button() {
 	
 
 }
+
+function back(){
+
+	window.location.href = "info-aparcamiento.html";
+	
+}

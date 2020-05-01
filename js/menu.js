@@ -15,7 +15,13 @@ function pagos() {
 }
 
 function reserva() {
-     window.location.href = "info-reserva.html";
+     if (sessionStorage.getItem("reserva") == '1'){
+          window.location.href = "info-reserva.html";
+     }
+     else{
+          window.alert("No tienes reservas en este momento");
+     }
+     
 }
 
 function informacion() {
@@ -35,8 +41,4 @@ function logout() {
     sessionStorage.removeItem('vhmatricula');
 
     //delete rest of cookies
-}
-
-function delete_cookie( name ) {
-  document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }

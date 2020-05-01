@@ -38,3 +38,16 @@ function set_precio(plus) {
 	document.getElementById("precio-total").innerHTML = precio_total;
 
 }
+
+function back(){
+    var direccion = ["reserva-aparcamiento.html", "repostar.html", "lavado.html"];
+     if(sessionStorage.getItem('repostar') == "true" ){
+        window.location.href = direccion[1];
+    } else if(sessionStorage.getItem('aparcar') == true ){
+        window.location.href = direccion[0];
+    } else{
+        window.location.href = "eleccion_pago.html";
+    }
+}
+
+    
