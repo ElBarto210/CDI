@@ -191,7 +191,8 @@
     font-size: 23px;
     position: absolute;
     top: 410px;
-    left: 150px;
+    left: 145px;
+    text-align: right;
 }
 
 #moneda {
