@@ -1,0 +1,64 @@
+.back {
+	width: 35px;
+}
+
+.top-text {
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.info-box{
+	background-color: #f2e9db;
+}
+
+.datos ,footer{
+	width: 70%;
+	margin-left: 15%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.service-text, .total-text{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.combustible-text{
+	display: inline-block;
+	font-size: 15px;
+	text-align: left;
+	float: right;
+}
+
+hr{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.tarifa {
+	display: inline-block;
+	font-size: 20px;
+}
+
+.precio-servicio {
+	display: inline-block;
+	font-size: 20px;
+	float: right;
+}
+
+.icons {
+	display: inline-block;
+	font-size: 30px;
+	float: right;
+}
+
+footer{
+	padding-top: 22px;
+}
+
+ .total-text{
+	margin-left: 50px;
+ }
