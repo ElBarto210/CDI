@@ -54,6 +54,16 @@ function back(){
     }
 }
 
+function next() {
+    if(precio_total>0) {
+       sessionStorage.precioLavado = precio_total;
+       window.location.href = "eleccion_pago.html";
+    }
+    else{
+        window.alert("Selecciona un tipo de lavado.");
+    }
+}
+
     
 function update_precio() {
 	sessionStorage.setItem("precio-lavado",precio_total);

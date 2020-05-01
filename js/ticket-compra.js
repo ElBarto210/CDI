@@ -7,6 +7,12 @@ function carga_valores(){
     var presion = sessionStorage.getItem('presion');
     var lavado = sessionStorage.getItem('lavado');
 
+    var precioAparcamiento = Number(sessionStorage.precioAparcamiento);
+    var precioRepostaje = Number(sessionStorage.precioRepostaje);
+    var precioAceite = 3;
+    var precioPresion = 5;
+    var precioLavado = Number(sessionStorage.precioLavado);
+    
     console.log(aparcar);
     console.log(repostar);
     console.log(aceite);
@@ -14,29 +20,45 @@ function carga_valores(){
     console.log(lavado);
     
     if (aparcar == null){
-        console.log("hola");
         disable("aparcar");
+        precioAparcamiento = 0;
     }
-    else {  document.getElementById("precioAparcamiento").innerHTML = sessionStorage.precioAparcamiento;    
+    else {  document.getElementById("precioAparcamiento").innerHTML = sessionStorage.precioAparcamiento+"€";    
     }
     
     if (repostar == null){
-        console.log("hola2");
         disable("repostar");
+        precioRepostaje = 0;
     }
-    if (aceite == null){
-        console.log("hola3");
-        disable("aceite");
-    }
-    if (presion == null){
-        console.log("hola4");
-        disable("presion");
-    }
-    if (lavado == null){
-        console.log("hola5");
-        disable("lavado");
+    else {  document.getElementById("precioRepostaje").innerHTML = sessionStorage.precioRepostaje+"€";    
     }
     
+    if (aceite == null){
+        disable("aceite");
+        precioAceite = 0;
+    }
+    else{
+        document.getElementById("precioAceite").innerHTML = "3€";
+    }
+    
+    if (presion == null){
+        disable("presion");
+        precioPresion = 0;
+    }
+    else{
+        document.getElementById("precioPresion").innerHTML = "5€"; 
+    }
+    
+    if (lavado == null){
+        disable("lavado");
+        precioLavado = 0;
+    }
+    else{
+        document.getElementById("precioLavado").innerHTML = sessionStorage.precioLavado+"€";
+    }
+    console.log(Number(sessionStorage.precioRepostaje));
+    
+    document.getElementById("precioTotal").innerHTML = precioAparcamiento + precioRepostaje + precioAceite + precioPresion + precioLavado + "€";
 }
 
 function disable(id){
