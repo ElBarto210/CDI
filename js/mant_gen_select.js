@@ -3,6 +3,9 @@ var Vaceite = "false";
 var Vpresion = "false";
 var Vlavado = "false";
 
+var pulsado = "#bb8211";
+var no_pulsado = "#e7a732";
+
 function actualizar() {
     Vrepostar = sessionStorage.getItem("repostar");
     Vaceite = sessionStorage.getItem("aceite");
@@ -10,16 +13,16 @@ function actualizar() {
     Vlavado = sessionStorage.getItem("lavado");
     
     if(Vrepostar=="true") {
-        document.getElementById("repostar").style.background="#CA8D13";
+        document.getElementById("repostar").style.background=pulsado;
     }    
     if(Vaceite=="true") {
-        document.getElementById("aceite").style.background="#CA8D13";
+        document.getElementById("aceite").style.background=pulsado;
     }    
     if(Vpresion=="true") {
-        document.getElementById("presion").style.background="#CA8D13";
+        document.getElementById("presion").style.background=pulsado;
     }
     if(Vlavado=="true") {
-         document.getElementById("lavado").style.background="#CA8D13";
+         document.getElementById("lavado").style.background=pulsado;
     }
 
     if(Vrepostar==null) {
@@ -38,12 +41,12 @@ function actualizar() {
 
 function repostar() {
     if(Vrepostar=="false"){
-        document.getElementById("repostar").style.background="#CA8D13";
+        document.getElementById("repostar").style.background=pulsado;
         Vrepostar="true";
         sessionStorage.setItem("repostar",Vrepostar);
     }
     else {
-        document.getElementById("repostar").style.background="#e7a732";
+        document.getElementById("repostar").style.background=no_pulsado;
         Vrepostar="false";
         sessionStorage.setItem("repostar",Vrepostar);
     }
@@ -51,12 +54,12 @@ function repostar() {
 
 function aceite() {
     if(Vaceite=="false"){
-        document.getElementById("aceite").style.background="#CA8D13";
+        document.getElementById("aceite").style.background=pulsado;
         Vaceite="true";
         sessionStorage.setItem("aceite",Vaceite);
     }
     else {
-        document.getElementById("aceite").style.background="#e7a732";
+        document.getElementById("aceite").style.background=no_pulsado;
         Vaceite="false";
         sessionStorage.setItem("aceite",Vaceite);
     }
@@ -64,12 +67,12 @@ function aceite() {
 
 function presion() {
     if(Vpresion=="false"){
-        document.getElementById("presion").style.background="#CA8D13";
+        document.getElementById("presion").style.background=pulsado;
         Vpresion="true";
          sessionStorage.setItem("presion",Vpresion);
     }
     else {
-        document.getElementById("presion").style.background="#e7a732";
+        document.getElementById("presion").style.background=no_pulsado;
         Vpresion="false";
          sessionStorage.setItem("presion",Vpresion);
     }
@@ -77,12 +80,12 @@ function presion() {
 
 function lavado() {
     if(Vlavado=="false"){
-        document.getElementById("lavado").style.background="#CA8D13";
+        document.getElementById("lavado").style.background=pulsado;
         Vlavado="true";
         sessionStorage.setItem("lavado",Vlavado);
     }
     else {
-        document.getElementById("lavado").style.background="#e7a732";
+        document.getElementById("lavado").style.background=no_pulsado;
         Vlavado="false";
         sessionStorage.setItem("lavado",Vlavado);
     }

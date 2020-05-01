@@ -1,5 +1,8 @@
 var Vaparcar = "false";
 
+var pulsado = "#bb8211";
+var no_pulsado = "#e7a732";
+
 function actualizar() {
     Vaparcar = sessionStorage.getItem("aparcar");
 
@@ -36,10 +39,10 @@ function aparcar() {
     if(Vaparcar=="true") {  
         Vaparcar = "false";
         sessionStorage.setItem("aparcar",Vaparcar);
-        document.getElementById("aparcar").style.background="#e7a732";
+        document.getElementById("aparcar").style.background=no_pulsado;
     }
     else {
-        document.getElementById("aparcar").style.background="#CA8D13";
+        document.getElementById("aparcar").style.background=pulsado;
         Vaparcar = "true";
         sessionStorage.setItem("aparcar",Vaparcar);
     }
