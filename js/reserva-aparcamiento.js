@@ -10,7 +10,9 @@ function reservar_button() {
             window.location.href = direccion[1];
         } else if(sessionStorage.getItem('lavado') == "true" ){
             window.location.href = direccion[2];
-        }
+        } else {
+		window.location.href = "eleccion_pago.html";
+		}
     }
     else{
         window.alert("El tiempo no puede ser menor que 1.");
@@ -20,7 +22,7 @@ function reservar_button() {
 
 function back(){
 
-	window.location.href = "info-aparcamiento.html";
+	window.location.href = "info_aparcamiento.html";
 	
 }
 
