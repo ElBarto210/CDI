@@ -38,7 +38,7 @@ function plate3() {
 function aparcar() {
     if(Vaparcar=="true") {  
         Vaparcar = "false";
-        sessionStorage.setItem("aparcar",Vaparcar);
+        sessionStorage.removeItem("aparcar");
         document.getElementById("aparcar").style.background=no_pulsado;
     }
     else {

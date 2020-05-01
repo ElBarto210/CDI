@@ -48,7 +48,7 @@ function repostar() {
     else {
         document.getElementById("repostar").style.background=no_pulsado;
         Vrepostar="false";
-        sessionStorage.setItem("repostar",Vrepostar);
+        sessionStorage.removeItem("repostar");
     }
 }
 
@@ -61,7 +61,7 @@ function aceite() {
     else {
         document.getElementById("aceite").style.background=no_pulsado;
         Vaceite="false";
-        sessionStorage.setItem("aceite",Vaceite);
+        sessionStorage.removeItem("aceite");
     }
 }
 
@@ -74,7 +74,7 @@ function presion() {
     else {
         document.getElementById("presion").style.background=no_pulsado;
         Vpresion="false";
-        sessionStorage.setItem("presion",Vpresion);
+        sessionStorage.removeItem("presion");
     }
 }
 
@@ -87,14 +87,10 @@ function lavado() {
     else {
         document.getElementById("lavado").style.background=no_pulsado;
         Vlavado="false";
-        sessionStorage.setItem("lavado",Vlavado);
+        sessionStorage.removeItem("lavado");
     }
 }
 
 function volver() {
-    sessionStorage.setItem("repostar",Vrepostar);
-    sessionStorage.setItem("aceite",Vaceite);
-    sessionStorage.setItem("presion",Vpresion);
-    sessionStorage.setItem("lavado",Vlavado);
     window.location.href = "service_select.html";
 }
