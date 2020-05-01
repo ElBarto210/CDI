@@ -103,7 +103,7 @@ function next(){
 
 function back(){
     var direccion = ["reserva-aparcamiento.html", "repostar.html", "lavado.html"];
-    if(sessionStorage.getItem('aparcar') == true ){
+    if(sessionStorage.getItem('aparcar') == true | sessionStorage.getItem('aparcar') == "true"){
         window.location.href = direccion[0];
     } else{
         window.location.href = "info_aparcamiento.html";
