@@ -1,6 +1,6 @@
 function next(){
     var direccion = ["reserva-aparcamiento.html", "repostar.html", "lavado.html"];
-	if(sessionStorage.getItem('aparcar') == true ){
+	if(sessionStorage.getItem('aparcar') == true | sessionStorage.getItem('aparcar') == "true"){
 		window.location.href = direccion[0];
 	} else if(sessionStorage.getItem('repostar') == "true" ){
 		window.location.href = direccion[1];
