@@ -28,7 +28,7 @@
 
 .info-box{
 	background-color: #f2e9db;
-	padding-bottom: 60%;
+	padding-bottom: 90%;
 }
 
 h1{
@@ -69,3 +69,15 @@ footer{
 	cursor: pointer;
 	border: none;
 }
+
+.icono-boton-busqueda{
+    left: 240px;
+    top: 500px;
+}
+
+.precioAparcamiento {
+    position:absolute;
+    top: 400px;
+    left: 50px;
+}
+
