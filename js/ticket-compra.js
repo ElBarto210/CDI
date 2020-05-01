@@ -8,33 +8,36 @@ function carga_valores(){
     var lavado = sessionStorage.getItem('lavado');
 
     console.log(aparcar);
+    console.log(repostar);
+    console.log(aceite);
+    console.log(presion);
+    console.log(lavado);
     
-    if (aparcar != true){
+    if (aparcar == null){
+        console.log("hola");
         disable("aparcar");
     }
-    else{
-        console.log("beatch");
-    }
-    if (repostar == true){
+    if (repostar == null){
+        console.log("hola2");
         disable("repostar");
     }
-    if (aceite == true){
+    if (aceite == null){
+        console.log("hola3");
         disable("aceite");
     }
-    if (presion == true){
+    if (presion == null){
+        console.log("hola4");
         disable("presion");
     }
-    if (lavado == true){
+    if (lavado == null){
+        console.log("hola5");
         disable("lavado");
     }
     
 }
 
 function disable(id){
-    var nodes = document.getElementById(id).getElementsByTagName('*');
-    for(var i = 0; i < nodes.length; i++){
-        nodes[i].disabled = true;
-    }
+    document.getElementById(id).style.display = 'none';
 }
 
 
