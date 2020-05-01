@@ -94,6 +94,84 @@
     border-bottom-width: 1px;
 }
 
+#extras {
+    margin-top: 70px;
+    height: 190px;
+}
+
+.botones-extras {
+    text-decoration: none;
+    background: #ffaa00;
+    width: 260px;
+    height: 45px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    padding-left: 25px;
+}
+
+.botones-extras:hover {
+    outline-color: floralwhite;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: 0px;
+}
+
+#check-A {
+    width: 25px !important;
+    height: 25px !important;
+    position: absolute;
+    left: 60px;
+    top: 224px;
+}
+
+#check-AA {
+    width: 25px !important;
+    height: 25px !important;
+    position: absolute;
+    left: 60px;
+    top: 224px;
+}
+
+#check-B {
+    vertical-align: middle;
+    position: absolute;
+    width: 25px !important;
+    height: 25px !important;
+    left: 60px;
+    top: 289px;
+}
+
+#check-BB {
+    vertical-align: middle;
+    position: absolute;
+    width: 25px !important;
+    height: 25px !important;
+    left: 60px;
+    top: 289px;
+}
+
+#check-C {
+    vertical-align: middle;
+    position: absolute;
+    width: 25px !important;
+    height: 25px !important;
+    left: 60px;
+    top: 355px;
+}
+
+#check-CC {
+    vertical-align: middle;
+    position: absolute;
+    width: 25px !important;
+    height: 25px !important;
+    left: 60px;
+    top: 355px;
+}
+
 #precio {
     width: 90%;
     height: 50px;
