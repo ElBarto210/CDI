@@ -1,0 +1,128 @@
+.back {
+    position: absolute !important;
+    cursor: pointer;
+}
+
+#top-text {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+#fondo-blanco {
+    background-color: floralwhite;
+    width: 100%;
+    height: 480px;
+}
+
+#tipo-lavado-container {
+    background-color: ;
+    height: 300px;
+    width: 87%;
+    margin: auto;
+}
+
+#texto-tipo-lavado {
+    margin-top: 10px;
+}
+
+#input-tipo-lavado {
+    position: absolute;
+    top: 163px;
+    left: 8px;
+    width: 280px !important;
+}
+
+.down-arrow {
+    position: absolute;
+    top: 168px;
+    right: 27px;
+    cursor: pointer;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.up-arrow {
+    position: absolute;
+    top: 168px;
+    right: 27px;
+    cursor: pointer;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+#tipo-lavado-selector {
+    position: absolute;
+    top: 197px;
+    left: 8px;
+    margin-left: 10px;
+    width: 280px;
+    border-style: solid;
+    border-width: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: #e69900;
+    border-top-width: 0px;
+    border-radius: 0px 0px 8px 8px;
+    background-color: white;
+    z-index: 1;
+}
+
+#separador-matriculas {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 310px;
+    height: 5px;
+    z-index: 2;
+    margin: 0;
+    border-top: 2px solid #e69900;
+}
+
+.tipo-lavado {
+    position: relative;
+    width: 280px;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    padding-bottom: 7px;
+    padding-top: 0px;
+    text-align: left;
+    cursor: pointer;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#precio {
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 1px solid #e69900;
+}
+
+#total {
+    font-size: 23px;
+    position: absolute;
+    top: 410px;
+    right: 100px;
+}
+
+#precio-total {
+    font-size: 23px;
+    position: absolute;
+    top: 410px;
+    right: 50px;
+}
+
+#moneda {
+    font-size: 23px;
+    position: absolute;
+    top: 410px;
+    right: 30px;
+}
+
+.icono-boton-busqueda {
+    top: 490px !important;
+}

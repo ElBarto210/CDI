@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>APP</title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/lavado.css">
+	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
+    <script type="text/javascript" src="js/lavado.js"></script>
+
+</head>
+<body>
+	<div class="app-container">
+		<a href="repostar.html" class="fa fa-chevron-left back" aria-hidden="true"></a>
+		<h2 id="top-text">Lavado</h2>
+        <div id="fondo-blanco">
+    		<div id="tipo-lavado-container">
+                <p style="visibility: hidden; height: 4px;">a</p>
+    			<h3 id="text-tipo-lavado">Tipo de lavado</h3>
+                <input type="text" id="input-tipo-lavado" name="lavado" disabled="true" placeholder="Tipo">
+                <i class="fas fa-chevron-down down-arrow" onclick="list_lavados()"></i>
+
+                <div id="tipo-lavado-selector" style="visibility: hidden">
+                    <hr id="separador-matriculas">
+                    <p onclick="lavado1()" class="tipo-lavado">Lavado a mano</p>
+                    <p onclick="lavado2()" class="tipo-lavado">Tunel de lavado</p>
+                    <p onclick="lavado3()" class="tipo-lavado" style="border-bottom-style: hidden;">Lavado automático</p>
+        </div>
+
+            </div>
+            <div id="precio">
+                <h3 id="total">Total:</h3><p id="precio-total">0.00<p><p id="moneda">€<p> 
+            </div>
+                <a href="reserva-aparcamiento.html">
+                    <i class="fas fa-check icono-boton-busqueda"></i>
+                </a>
+                
+    		</div>
+        </div>
+	</div>
+</body>
+</html>
