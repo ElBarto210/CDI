@@ -5,6 +5,12 @@
 	margin-bottom: 10px;
 }
 
+.info-box{
+	padding-top: 1px;
+	background-color: #f2e9db;
+	padding-bottom: 68%;
+}
+
 .distancia {
 	display: inline-block;
 	text-align: center;
@@ -33,27 +39,24 @@
 	font-size: 27px;
 }
 
-.info-box{
-	background-color: #f2e9db;
-	padding-bottom: 70%;
-}
-
 .back {
 	width: 35px;
 }
 
-.parking-box {
-	background-color: #f2e9db;
+.parking{
+	background-color: #fff7e6;
+	box-shadow: inset -3px -3px 0px 0px rgba(231,167,50,0.75);
 	width: 90%;
 	margin: auto;
-}
-
-.parking-box:hover{
+	margin-bottom: 10px;
+	margin-top: 10px;
 	cursor: pointer;
+	padding-bottom: 10px;
+	padding-right: 5px;
 }
 
-.parking-box:focus{
-	background-color: #e5a227;
+hr {
+	margin: 0 !important;
 }
 
 .icono-boton-busqueda {
