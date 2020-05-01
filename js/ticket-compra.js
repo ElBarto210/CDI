@@ -17,6 +17,9 @@ function carga_valores(){
         console.log("hola");
         disable("aparcar");
     }
+    else {  document.getElementById("precioAparcamiento").innerHTML = sessionStorage.precioAparcamiento;    
+    }
+    
     if (repostar == null){
         console.log("hola2");
         disable("repostar");

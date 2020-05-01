@@ -17,16 +17,18 @@
 	
 		<div class="info-box">
 			<h1>Duración aproximada:</h1>
-			<input type="number" id="duracion" name="duracion" placeholder="Duración">&emsp;<div class="text-horas">horas</div>
+			<input type="number" id="duracion" name="duracion" placeholder="Duración" onchange="precioAparcamiento()">&emsp;<div class="text-horas">horas</div>
 			<i class="fas fa-stopwatch reloj"></i>
 			<p id="texto-medio">Preasignación de plaza:<br>28 sección E planta -1<p>
 				<p class="icons" style="visibility: hidden;"><i class="fas fa-wheelchair"></i></p>
-		</div>
-
-		<footer>
-			<hr>
-			<button class="standar-big-button" onclick="reservar_button()">RESERVAR</button>
-		</footer>
+		    <div class="precioAparcamiento">
+                <b>Aparcamiento:</b> <i id="precioAparcamiento">0.00€
+                </i>
+            </div>
+            <a onclick="reservar_button()">
+				<i class="fas fa-chevron-right icono-boton-busqueda"></i>
+            </a>
+        </div>
 	</div>
 </body>
 </html>

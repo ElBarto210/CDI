@@ -93,11 +93,17 @@ function precioRepostaje() {
 
 }
 function next(){
-    var direccion = ["reserva-aparcamiento.html", "repostar.html", "lavado.html"];
-	if(sessionStorage.getItem('lavado') == "true" ){
-		window.location.href = direccion[2];
-	} else{
-        window.location.href = "eleccion_pago.html";
+    if(document.getElementById("cantidad").value>0) {
+        var direccion = ["reserva-aparcamiento.html", "repostar.html", "lavado.html"];
+
+        if(sessionStorage.getItem('lavado') == "true" ){
+            window.location.href = direccion[2];
+        } else{
+            window.location.href = "eleccion_pago.html";
+        }
+    }
+    else{
+        window.alert("La cantidad no puede ser inferior a 1");
     }
 }
 
