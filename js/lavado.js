@@ -43,6 +43,11 @@ function set_precio(plus) {
 
 }
 
+function update_precio() {
+	sessionStorage.setItem("precio-lavado",precio_total);
+	document.getElementById("precio-total").innerHTML = precio_total;
+}
+
 
 /*EXTRAS*/
 
@@ -51,11 +56,15 @@ function abrillantador() {
 	    Vabrillantador = "false";
 	   	document.getElementById("abrillantador").style.background=no_pulsado;
 	   	document.getElementById("check-AA").style.visibility="hidden";
+	   	precio_total-=5;
+	   	update_precio();
 	}
 	else {
 	    document.getElementById("abrillantador").style.background=pulsado;
 	    document.getElementById("check-AA").style.visibility="visible";
 	    Vabrillantador = "true";
+	    precio_total+=5;
+	    update_precio();
 	}
 }
 
@@ -64,11 +73,15 @@ function encerado() {
 	        Vencerado = "false";
 	        document.getElementById("encerado").style.background=no_pulsado;
 	        document.getElementById("check-BB").style.visibility="hidden";
+	        precio_total-=8;
+	        update_precio();
 	    }
 	    else {
 	        document.getElementById("encerado").style.background=pulsado;
 	        document.getElementById("check-BB").style.visibility="visible";
 	        Vencerado = "true";
+	        precio_total+=8;
+	        update_precio();
 	    }
 }
 
@@ -77,11 +90,15 @@ function embellecimiento() {
 	        Vembellecimiento = "false";
 	        document.getElementById("embellecimiento").style.background=no_pulsado;
 	        document.getElementById("check-CC").style.visibility="hidden";
+	        precio_total-=10;
+	        update_precio();
 	    }
 	    else {
 	        document.getElementById("embellecimiento").style.background=pulsado;
 	        document.getElementById("check-CC").style.visibility="visible";
+	        precio_total+=10;
 	        Vembellecimiento = "true";
+	        update_precio();
 	    }
 }
 
