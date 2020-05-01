@@ -67,7 +67,7 @@ function addVehicle(matricula, w,t,b,e) {
    
     div.innerHTML = `
     <h1>`+matricula+`</h1>
-    <i class="icon fas fa-car"></i>
+    <i class="icon fas fa-parking"></i>
     <div class="feature_icon_box">`+a+tr+c+d+`
     </div>
     <i class="fas fa-trash thrash_icon" onclick='removeVehicle(\"`+matricula+`\")'></i>
