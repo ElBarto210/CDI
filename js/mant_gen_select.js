@@ -74,7 +74,7 @@ function presion() {
     else {
         document.getElementById("presion").style.background=no_pulsado;
         Vpresion="false";
-         sessionStorage.setItem("presion",Vpresion);
+        sessionStorage.setItem("presion",Vpresion);
     }
 }
 
@@ -92,5 +92,9 @@ function lavado() {
 }
 
 function volver() {
+    sessionStorage.setItem("repostar",Vrepostar);
+    sessionStorage.setItem("aceite",Vaceite);
+    sessionStorage.setItem("presion",Vpresion);
+    sessionStorage.setItem("lavado",Vlavado);
     window.location.href = "service_select.html";
 }
