@@ -10,7 +10,7 @@ function continue_button() {
     var caducidad = sessionStorage.setItem('caducidad',caducidad );
 
 
-    window.location.href = "principal.html"
+    window.location.href = "tarjeta_list.html"
 
 }
 
@@ -48,5 +48,5 @@ function paypal() {
 
 function gopaypal_button() {
     sessionStorage.setItem('paypal', 'paypal');
-    window.location.href = "principal.html";
+    window.location.href = "tarjeta_list.html";
 }

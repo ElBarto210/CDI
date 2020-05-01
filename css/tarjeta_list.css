@@ -72,7 +72,9 @@ h1 {
 .thrash_icon{
     width: 30px !important;
     height: 30px !important;
-    margin-left: 290px;
+    margin-left: 223px;
+    margin-top:30px;
+    position: absolute;
     cursor: pointer;
 }
 

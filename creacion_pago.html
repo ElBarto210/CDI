@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Pago</title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/pago.css">
+	<script type="text/javascript" src="js/creacion_pago.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
+</head>
+<body>
+	<div class="app-container">
+		<header>
+			<h2 class="top-text">Selecciona una forma de pago</h2>
+		</header>
+        <div id="buttons">
+            <div class="box-tarjeta" id="button-tarjeta" onclick="tarjeta()">
+                <i class="fas fa-credit-card" id="card"></i>
+                <div class="texto-cuadro"><b>TARJETA</b></div>
+            </div>
+            <div class="box-tarjeta" id="button-paypal" onclick="paypal()">
+                <i class="fab fa-paypal" id="card"></i>
+                <div class="texto-cuadro"><b>PAYPAL</b></div>
+            </div>
+        </div>
+		<div id="datos-box" style="visibility: hidden;">
+			<h2 class="text-over-input">NOMBRE</h2>
+			<input type="text" id="name" name="name" required minlength="2" maxlength="50">
+
+			<h2 class="text-over-input">NÚMERO TARJETA</h2>
+			<input type="text" id="tarjeta" name="tarjeta" required minlength="19" maxlength="19" placeholder="XXXX-XXXX-XXXX-XXXX">
+
+			<h2 class="text-over-input">CVV</h2>
+			<input type="text" id="cvv" name="cvv" required minlength="3" maxlength="3" placeholder="000">
+
+			<h2 class="text-over-input">FECHA CADUCIDAD</h2>
+			<input type="text" id="caducidad" name="caducidad" required minlength="5" maxlength="5" placeholder="MM/AA">
+
+			<div class="boton-final"><input class="standar-big-button" type="submit" value="REGISTRARSE" onclick="continue_button()" style="margin-top: 20px;"></div>
+		</div>
+        
+        <div id="paypal-box" style="visibility: hidden;">
+            <button onclick="gopaypal_button()" class="standar-big-button">IR A PAYPAL</button>
+        </div>
+
+	</div>
+</body>
+</html>

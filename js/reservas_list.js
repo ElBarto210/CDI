@@ -40,13 +40,14 @@ function update(){
     setVehicles();
 }
 
-function addVehicle(matricula, w,t,b,e) {
+function addReservas(matricula, w,t,b,e) {
     const div = document.createElement('div');
       
     div.className = 'menu-button';
 
     div.id = matricula;
 
+    //servicios contratados
     var a ="";
     var tr ="";
     var c ="";

@@ -7,11 +7,11 @@ function Usuario() {
 }
 
 function vehiculos() {
-     window.location.href = "principal.html";
+     window.location.href = "vh_list.html";
 }
 
 function pagos() {
-     window.location.href = "principal.html";
+     window.location.href = "tarjeta_list.html";
 }
 
 function reserva() {

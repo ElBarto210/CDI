@@ -6,7 +6,7 @@ function Search_destination() {
 }
 
 function getUsername() {
-    var name = sessionStorage.getItem('name')
+    var name = sessionStorage.getItem('name');
     if(name == ""){
         name = "admin";
     }
@@ -19,4 +19,11 @@ function displaymenu() {
 
 function login() {
     window.location.href = "login.html";
+    sessionStorage.setItem('vehicles', JSON.stringify([]));
+    sessionStorage.setItem('pagos', JSON.stringify([]));
+}
+
+function register(){
+    sessionStorage.setItem('vehicles', JSON.stringify([]))
+    sessionStorage.setItem('pagos', JSON.stringify([]))
 }
