@@ -45,7 +45,7 @@ function back(){
     window.location.href = direccion[2];
     } else if(sessionStorage.getItem('repostar') == "true" ){
         window.location.href = direccion[1];
-    } else if(sessionStorage.getItem('aparcar') == true ){
+    } else if(sessionStorage.getItem('aparcar') == true | sessionStorage.getItem('aparcar') == "true"){
         window.location.href = direccion[0];
     } else{
         window.location.href = "info_aparcamiento.html";
