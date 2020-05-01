@@ -1,6 +1,5 @@
 var optionPicked = 2;
 var gasPicked = 1;
-var precioRepostajeAnterior = 0;
 
 function list_options() {
     document.getElementById("full-option-selector").style.visibility="visible";
@@ -86,7 +85,7 @@ function precioRepostaje() {
         else {
             precioRepostaje = cantidad;
         }
-        document.getElementById("precioRepostaje").innerHTML = precioRepostaje+"€";
+        document.getElementById("precioRepostaje").innerHTML = precioRepostaje;
         
     
     }
@@ -95,7 +94,7 @@ function precioRepostaje() {
 function next(){
     if(document.getElementById("cantidad").value>0) {
         var direccion = ["reserva-aparcamiento.html", "repostar.html", "lavado.html"];
-
+        sessionStorage.precioRepostaje = document.getElementById("precioRepostaje").innerHTML; 
         if(sessionStorage.getItem('lavado') == "true" ){
             window.location.href = direccion[2];
         } else{
