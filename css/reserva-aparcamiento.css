@@ -1,3 +1,21 @@
+.reloj {
+	position: absolute;
+	width: 30px !important;
+	height: 30px !important;
+	top: 121px;
+	left: 285px;
+
+}
+
+#texto-medio {
+	position: absolute;
+	font-size: 22px;
+	text-align: center;
+	width: 300px;
+	top: 230px;
+	left: 26px;
+}
+
 .back {
 	width: 35px;
 }
